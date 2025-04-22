@@ -1,13 +1,13 @@
 /* ==== BASE ==== */
 body {
-  background-color: #fdfdfd;
+  background-color: #e8ffc3;
   color: #333;
   margin: 0;
   padding: 0;
   line-height: 1.6;
 }
 
-/* ==== FONT FALLBACKS FOR EACH PAGE ==== */
+
 .page-mulish {
   font-family: 'Mulish', sans-serif;
 }
@@ -20,7 +20,7 @@ body {
   font-family: 'Mulish', sans-serif;
 }
 
-/* ==== NAVBAR ==== */
+
 .navbar-brand {
   font-weight: 700;
 }
@@ -36,7 +36,6 @@ body {
   color: #0d6efd;
 }
 
-/* ==== HERO SECTION (index.html) ==== */
 .hero {
   text-align: center;
   padding: 3rem 1rem;
@@ -52,7 +51,7 @@ body {
   color: #666;
 }
 
-/* ==== CARD STYLING (index.html if cards are added) ==== */
+
 .card-title {
   font-size: 1.5rem;
   font-weight: 600;
@@ -73,7 +72,7 @@ body {
   color: #fff;
 }
 
-/* ==== TITLE BLOCK ==== */
+
 .title-block {
   text-align: center;
   margin-top: 3rem;
@@ -90,7 +89,7 @@ body {
   color: #666;
 }
 
-/* ==== TYPOGRAPHY SECTION ==== */
+
 .section {
   padding: 2rem 0;
   border-bottom: 1px solid #eee;
@@ -113,7 +112,7 @@ body {
   white-space: pre-line;
 }
 
-/* ==== TYPOGRAPHY SIZES ==== */
+
 h1 { font-size: 89.76px; margin-bottom: 0.5rem; }
 h2 { font-size: 67.34px; margin-bottom: 0.5rem; }
 h3 { font-size: 50.52px; margin-bottom: 0.5rem; }
@@ -164,7 +163,7 @@ footer {
   margin-top: 4rem;
 }
 
-/* ==== RESPONSIVE STYLES ==== */
+
 @media (max-width: 767px) {
   h1 { font-size: 48px; }
   h2 { font-size: 40px; }
