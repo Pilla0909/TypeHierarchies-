@@ -1,17 +1,16 @@
-/* Typography Base */
+/* ==== BASE ==== */
 body {
   font-family: 'Mulish', sans-serif;
   background-color: #fdfdfd;
   color: #333;
-  line-height: 1.6;
   margin: 0;
   padding: 0;
+  line-height: 1.6;
 }
 
-/* Navbar */
+/* ==== NAVBAR ==== */
 .navbar-brand {
   font-weight: 700;
-  font-size: 1.25rem;
 }
 
 .navbar .nav-link {
@@ -25,7 +24,7 @@ body {
   color: #0d6efd;
 }
 
-/* Hero (index.html) */
+/* ==== HERO SECTION (index.html) ==== */
 .hero {
   text-align: center;
   padding: 3rem 1rem;
@@ -38,11 +37,11 @@ body {
 }
 
 .hero p {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   color: #666;
 }
 
-/* Cards on Homepage */
+/* ==== CARD STYLING (index.html) ==== */
 .card-title {
   font-size: 1.5rem;
   font-weight: 600;
@@ -55,9 +54,15 @@ body {
 .btn-outline-primary {
   border-radius: 0;
   padding: 0.5rem 1rem;
+  transition: 0.2s ease;
 }
 
-/* Title block on each page */
+.btn-outline-primary:hover {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+/* ==== TITLE BLOCK (page1–3) ==== */
 .title-block {
   text-align: center;
   margin-top: 3rem;
@@ -65,7 +70,7 @@ body {
 }
 
 .title-block h2 {
-  font-size: 2rem;
+  font-size: 2.25rem;
   font-weight: 700;
 }
 
@@ -74,10 +79,20 @@ body {
   color: #666;
 }
 
-/* Typography Section */
+/* ==== TYPOGRAPHY SAMPLES SECTION ==== */
 .section {
   padding: 2rem 0;
   border-bottom: 1px solid #eee;
+}
+
+.section strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.section em {
+  font-style: italic;
 }
 
 .code {
@@ -87,6 +102,16 @@ body {
   white-space: pre-line;
 }
 
+/* ==== SHARED TYPOGRAPHY SIZES ==== */
+h1 { font-size: 89.76px; margin-bottom: 0.5rem; }
+h2 { font-size: 67.34px; margin-bottom: 0.5rem; }
+h3 { font-size: 50.52px; margin-bottom: 0.5rem; }
+h4 { font-size: 37.9px; margin-bottom: 0.5rem; }
+p  { font-size: 16px; }
+.small-text { font-size: 12px; }
+.tiny-text  { font-size: 9px; }
+
+/* ==== LINKS ==== */
 a.link {
   color: #0d6efd;
   text-decoration: underline;
@@ -96,7 +121,7 @@ a.link.hover:hover {
   text-decoration: none;
 }
 
-/* Footer */
+/* ==== FOOTER ==== */
 footer {
   text-align: center;
   padding: 2rem 0;
@@ -104,4 +129,15 @@ footer {
   color: #888;
   border-top: 1px solid #eee;
   margin-top: 4rem;
+}
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 767px) {
+  h1 { font-size: 48px; }
+  h2 { font-size: 40px; }
+  h3 { font-size: 32px; }
+  h4 { font-size: 24px; }
+  .hero h1 { font-size: 2.25rem; }
+  .title-block h2 { font-size: 1.75rem; }
+  .code { font-size: 0.8rem; }
 }
