@@ -1,11 +1,23 @@
-/* ==== FONT DEFAULTS ==== */
+/* ==== BASE ==== */
 body {
-  font-family: 'Mulish', sans-serif;
   background-color: #fdfdfd;
   color: #333;
   margin: 0;
   padding: 0;
   line-height: 1.6;
+}
+
+/* ==== FONT FALLBACKS FOR EACH PAGE ==== */
+.page-mulish {
+  font-family: 'Mulish', sans-serif;
+}
+
+.page-abril {
+  font-family: 'Lato', sans-serif;
+}
+
+.page-sourceserif {
+  font-family: 'Mulish', sans-serif;
 }
 
 /* ==== NAVBAR ==== */
@@ -33,7 +45,6 @@ body {
 .hero h1 {
   font-size: 3rem;
   font-weight: 700;
-  margin-bottom: 0.5rem;
 }
 
 .hero p {
@@ -41,7 +52,7 @@ body {
   color: #666;
 }
 
-/* ==== CARD STYLING (index.html) ==== */
+/* ==== CARD STYLING (index.html if cards are added) ==== */
 .card-title {
   font-size: 1.5rem;
   font-weight: 600;
@@ -102,7 +113,7 @@ body {
   white-space: pre-line;
 }
 
-/* ==== SHARED TYPOGRAPHY SIZES ==== */
+/* ==== TYPOGRAPHY SIZES ==== */
 h1 { font-size: 89.76px; margin-bottom: 0.5rem; }
 h2 { font-size: 67.34px; margin-bottom: 0.5rem; }
 h3 { font-size: 50.52px; margin-bottom: 0.5rem; }
@@ -111,41 +122,26 @@ p  { font-size: 16px; }
 .small-text { font-size: 12px; }
 .tiny-text  { font-size: 9px; }
 
-/* ==== FONT OVERRIDES ==== */
-
-/* -- Page 1: Mulish only -- */
+/* ==== PAGE-SPECIFIC FONT STYLING ==== */
 .page-mulish h1,
 .page-mulish h2,
 .page-mulish h3,
 .page-mulish h4 {
   font-family: 'Mulish', sans-serif;
-  font-weight: 700;
 }
 
-/* -- Page 2: Abril Fatface (headings), Lato (body) -- */
 .page-abril h1,
 .page-abril h2,
 .page-abril h3,
 .page-abril h4 {
   font-family: 'Abril Fatface', serif;
-  font-weight: 400;
 }
 
-.page-abril body {
-  font-family: 'Lato', sans-serif;
-}
-
-/* -- Page 3: Source Serif Pro (headings), Mulish (body) -- */
-.page-source h1,
-.page-source h2,
-.page-source h3,
-.page-source h4 {
+.page-sourceserif h1,
+.page-sourceserif h2,
+.page-sourceserif h3,
+.page-sourceserif h4 {
   font-family: 'Source Serif Pro', serif;
-  font-weight: 600;
-}
-
-.page-source body {
-  font-family: 'Mulish', sans-serif;
 }
 
 /* ==== LINKS ==== */
@@ -168,7 +164,7 @@ footer {
   margin-top: 4rem;
 }
 
-/* ==== RESPONSIVE ==== */
+/* ==== RESPONSIVE STYLES ==== */
 @media (max-width: 767px) {
   h1 { font-size: 48px; }
   h2 { font-size: 40px; }
