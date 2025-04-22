@@ -174,3 +174,52 @@ footer {
   .title-block h2 { font-size: 1.75rem; }
   .code { font-size: 0.8rem; }
 }
+
+
+
+
+
+@font-face {
+  font-family: 'NobotoFlex-VF';
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/274760/NobotoFlex-VF.ttf') format('truetype');
+  font-display: swap;
+}
+
+/* Hero Section */
+.animated-title {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.vr-font-1,
+.vr-font-2 {
+  font-family: 'NobotoFlex-VF';
+  margin: 0;
+  padding: 0;
+  line-height: 0.9;
+}
+
+.vr-font-1 {
+  font-size: 20vw;
+  animation: variety 1.5s infinite ease-in-out;
+}
+
+.vr-font-2 {
+  font-size: 10vw;
+  margin-top: -40px;
+  animation: variety2 1.5s infinite ease-in-out;
+}
+
+@keyframes variety {
+  0%   { font-variation-settings: 'wght' 188.563, 'MONO' 0; }
+  50%  { font-variation-settings: 'wght' 322, 'MONO' 100; }
+  100% { font-variation-settings: 'wght' 188.563, 'MONO' 0; }
+}
+
+@keyframes variety2 {
+  0%   { font-variation-settings: 'wght' 180, 'MONO' 0; }
+  50%  { font-variation-settings: 'wght' 180, 'MONO' 100; }
+  100% { font-variation-settings: 'wght' 180, 'MONO' 0; }
+}
